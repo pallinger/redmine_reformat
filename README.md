@@ -43,6 +43,12 @@ Dry run:
 rake reformat:convert to_formatting=markdown dryrun=1
 ```
 
+If wan to only convert the production environment:
+```sh
+rake reformat:convert to_formatting=markdown dryrun=1 RAILS_ENV=production
+```
+
+
 Parallel processing (Unix/Linux only, tested with PostgreSQL):
 ```sh
 rake reformat:convert to_formatting=markdown workers=10
